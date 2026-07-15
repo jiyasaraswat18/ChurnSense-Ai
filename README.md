@@ -14,7 +14,6 @@ Start the backend API:
 ```bash
 cd backend
 npm install
-copy .env.example .env
 npm run dev
 ```
 
@@ -23,7 +22,6 @@ Start the frontend:
 ```bash
 cd frontend
 npm install
-copy .env.example .env
 npm run dev
 ```
 
