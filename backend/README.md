@@ -112,3 +112,9 @@ ML_TIMEOUT_MS=30000
 ## Notes
 
 The backend depends on the trained model file located in the Model folder. If the model file is missing or the Python environment is not configured correctly, prediction requests will fail.
+
+---
+
+Jiya Saraswat
+
+Backend Development • API Design • Express.js • Python Model Integration • Data Validation • Deployment Support

@@ -77,3 +77,9 @@ If this variable is not set, the app will use the default backend URL.
 ## Notes
 
 The frontend depends on the backend API for prediction results. If the backend is not running, the app may show errors when submitting assessment data.
+
+---
+
+Jiya Saraswat
+
+Frontend Development • UI Design • React + TypeScript • Vite Integration • API Interaction • User Experience
