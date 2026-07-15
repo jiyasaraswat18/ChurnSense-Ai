@@ -67,27 +67,6 @@ Backend Integration
 
 ---
 
-# Project Structure
-
-```
-Machine-Learning part/
-
-├── data/
-│   └── customer_churn.xlsx
-│
-├── Notebook/
-│   ├── Customer_Churn_Prediction.ipynb
-│   └── EDA_Report.html
-|   └── README.md
-│
-├── Model/
-│   └── churn_model.pkl
-│
-└── requirements.txt
-
-```
-
----
 
 # Technology Stack
 
@@ -274,14 +253,6 @@ After training and evaluation, the complete preprocessing pipeline and trained X
 Model/
 └── churn_model.pkl
 ```
-
-Saving the complete pipeline ensures that:
-
-- identical preprocessing is applied during inference,
-- manual feature transformation is unnecessary,
-- deployment becomes significantly simpler,
-- prediction results remain consistent with the training workflow.
-
 ---
 
 # Running the Machine Learning Pipeline
@@ -306,18 +277,6 @@ Notebook/Customer_Churn_Prediction.ipynb
 
 Execute the notebook sequentially to reproduce the complete machine learning workflow.
 
----
-
-# Output Artifacts
-
-Successful execution generates the following outputs:
-
-- Trained XGBoost model (`churn_model.pkl`)
-- Serialized preprocessing pipeline
-- Evaluation metrics
-- Confusion matrix
-- Feature importance plots
-- EDA report
 
 ---
 
