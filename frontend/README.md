@@ -1,20 +1,79 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ChurnSense-Ai Frontend
 
-# Run and deploy your AI Studio app
+This is the React + Vite frontend for the customer churn prediction dashboard. It provides the user interface for onboarding, customer assessment, prediction results, analytics, and settings.
 
-This contains everything you need to run your app locally.
+## What this app does
 
-View your app in AI Studio: https://ai.studio/apps/ffeaa87c-b884-4106-9eec-878d91856efb
+The frontend allows users to:
+- view the landing page and navigate the product
+- log in to the dashboard experience
+- submit customer assessment data for churn prediction
+- view predicted churn risk and recommendations
+- browse analytics and historical prediction results
+- manage basic app settings and theme preferences
 
-## Run Locally
+## Tech stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Axios for API communication
+- Recharts for charts and analytics
+- Tailwind-style styling via the existing UI setup
+- Lucide icons and motion utilities
 
+## Prerequisites
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Make sure you have:
+- Node.js installed
+- The backend server running on port 5000
+
+## Local setup
+
+1. Go to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+The app will usually open at:
+- http://localhost:3000
+
+## Environment variables
+
+Create a local environment file if needed and set the API base URL:
+
+```env
+VITE_API_BASE_URL=http://localhost:5000/api
+```
+
+If this variable is not set, the app will use the default backend URL.
+
+## Useful scripts
+
+- `npm run dev` - start the local development server
+- `npm run build` - create a production build
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run TypeScript checking
+
+## Project structure
+
+- `src/pages/` - route pages such as Landing, Login, Dashboard, PredictionResult, Analytics
+- `src/components/` - reusable UI components like Navbar and Sidebar
+- `src/context/` - theme, authentication, and data context providers
+- `src/services/` - API integration logic
+- `src/routes/` - application routing setup
+
+## Notes
+
+The frontend depends on the backend API for prediction results. If the backend is not running, the app may show errors when submitting assessment data.
